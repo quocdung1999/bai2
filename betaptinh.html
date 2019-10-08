@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title>Bài 2</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <div class="header">
+            <b>Bé tập tính</b>
+    </div>
+    <div class="container">
+        <div class="left">
+            Số thứ nhất
+        </div>
+        <div class="center">
+            <input id='firstNum' type="text">
+        </div>
+        <div class="right1">
+                <input id='+' class="radio" type="radio" name="operator" >Cộng
+        </div>
+        <div class="right2">
+            <input id='-' class="radio" type="radio" name="operator" >Trừ
+        </div>
+    </div>
+    <div class="container">
+            <div class="left">
+                Số thứ hai
+            </div>
+            <div class="center">
+                <input id='secondNum' type="text">
+            </div>
+             <div class="right1">
+                <input id='*' class="radio" type="radio" name="operator" >Nhân
+            </div>
+            <div class="right2">
+                <input id='/' class="radio" type="radio" name="operator" >Chia                
+            </div>
+        </div>
+        <div class="container">
+                <div class="left">
+                    Kết quả
+                </div>
+                <div class="center">
+                        <input id='result' type="number" readonly>
+                </div>
+                 <div class="right">
+                    <button type="button" onclick="showresult()" >Tính</button>
+                </div>
+            </div>
+        <div class="container">
+            <div class="left">
+                Thông báo
+            </div>
+            <div id='error' class="center" >
+                
+            </div>
+            <div class="right">
+                <!-- nothing -->
+            </div>
+        </div>
+
+
+</body>
+<script src="function.js" type="text/javascript"></script>
+</html>
